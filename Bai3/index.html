@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee>
+        <img src="../img/dog.jpg" alt="">
+    </marquee>
+    <h1>bài 3</h1>
+    <!-- Danh sách list -->
+     <p>Danh sách công việc buổi sáng</p>
+    <ol>
+        <li>Thức dậy</li>
+        <li>Đánh răng</li>
+        <li>Ăn sáng</li>
+        <li>đi học</li>
+        <li>Giải lao</li>
+        
+    </ol>
+    <p>Các ngôn ngữ lập trình web</p>
+    <ul>
+        <li>Python</li>
+        <li>PHp</li>
+        <li>Javascript</li>
+        <li>C++</li>
+    </ul>
+    <h2>Form</h2>
+    <form>
+        <div>
+             Nhập họ và tên: <input type="text" name="Hoten" placeholder="Nhập tên vào đây">
+        </div> 
+       
+         <br>
+         <div>
+            <b> Giới thiệu chi tiết về bản thân:  </b>
+            <br> <textarea name="gioithieu">Hehe</textarea>
+        </div> 
+        <br>
+         <div>
+             <b>Email: </b>
+             <input type="email" name="email" placeholder="Dạng @gmail.com">
+        </div> 
+         
+        <br>
+         <div>
+             <b>Số điện thoại:</b>
+             <input name="sdt" type="tel" placeholder="Dạng số: 0123456789"  required pattern="([0]{1}([0,3,9]{1})([0-9]{8}))">
+        </div> 
+
+        <br>
+        <div>
+            <b>Giới thiệu</b>
+           <br> <input type="radio" name="gioitinh" value="nam">Nam <br>
+            <input type="radio" name="gioitinh" value="nu">Nữ <br>
+        </div>
+         <br>
+        <div>
+            <b>Sở thích </b>
+            <br><input type="checkbox" name="sothich">Chơi game <br>
+            <input type="checkbox" name="sothich">Nghe nhạc <br>
+            <input type="checkbox" name="sothich">Đá bóng
+        </div>
+        <br>
+        <div>
+            <b>Trình duyệt ưu thích</b>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet explore">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+            </datalist>
+            <br>
+            <select name="browsers">
+                <option value="Internet explore">Internet explore</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera </option>
+            </select>
+        </div>
+        <br>
+        <div>
+           0 <input type="range" value="20">100
+        </div>
+        <br>
+        <div>
+            <b>Nhập tuổi</b>
+            <br><input type="number" name="tuoi" step="0.5">
+        </div>
+        <br>
+        <div>
+            <b>Ngày tháng năm</b>
+            <input type="date" placeholder="ngaythangnam">
+        </div>
+        <br>
+        <div>
+            Chọn ảnh đại diện
+            <input type="file">
+        </div>
+        <br>
+        <div>
+            <b>Màu sắc</b>
+            <input type="color">
+        </div>
+        <br>
+        <div>
+            <b>Mật khẩu</b>
+            <input type="password">
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8sYbl7eyZsg?si=-YpXUrNf1y03yqkp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        
+    </form>
+    
+</body>
+</html>
