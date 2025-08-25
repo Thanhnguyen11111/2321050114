@@ -1,0 +1,35 @@
+h3{
+    color: orange;
+}
+#title{
+    background-color: #333;
+}
+.bg{
+    background-color: blueviolet;
+}
+
+p{
+    color: green;
+}
+
+a:link{
+    color: red;
+}
+h3:hover{
+    cursor: pointer;
+    background-color: #333;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+    /* margin: 100px 50px 25px 15px; */
+    width: 50%;
+    /* margin: auto căn khối ra giữa */
+    margin: 50px auto;
+    
+}
+.box3{
+    background-color: yellow;
+}
