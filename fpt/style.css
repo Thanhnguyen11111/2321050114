@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 75%;
+    margin: auto;
+}
+
+.danhmuc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 15%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+header a:hover {
+    color: #FF6500;
+}
+
+.chucnang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icon{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+.ti-bell:hover,
+.ti-search:hover{
+    color: #FF6500;
+    cursor: pointer;
+}
+.muagoi {
+    background-color: #FF6500;
+    border: none;
+    color: white;
+    padding: 13px 11px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+}
+.muagoi i{
+    margin-left: 5px;
+}
+.muagoi:hover{
+    opacity: 0.9;
+}
+.dangnhap {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+}
+.dangnhap:hover{
+    color: #FF6500;
+    cursor: pointer;
+}
+
+main {
+    background-color: #131314;
+    color: white;
+    width: 100%;
+    /* height: 1000px; */
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+
+.quangcao {
+    display: flex;
+    justify-content: center;
+}
+.quangcao img{
+    width: 75%;
+    margin-bottom: 15px;
+    margin-top: 75px;
+}.container img:hover,
+.quangcao img:hover{
+    cursor: pointer;
+}
+.container {
+    width: 77%;
+    background-color: black;
+    /* height: 1000px; */
+    margin: auto;
+
+}
+
+.banner {
+    width: 98%;
+}
+
+.qc {
+    margin-top: 10px;
+    width: 98%;
+    border-radius: 10px;
+}
+
+.tentheloai {
+    margin: 20px 20px 20px 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.danhsach {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 10px 0px 10px;
+    gap: 10px;
+    
+}
+.danhsach img:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.phim {
+    width: 19%;
+}
+
+.phim img {
+    width: 100%;
+}
+.ten{
+    margin-bottom: 25px;
+}
+footer{
+    background-color: #131314;
+    font-family: "SFProDisplay", Arial, sans-serif;
+    
+}
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+.footer-content{
+    width: 100%;
+    height: 100%;
+    background-color: #131314;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+.content-con img{
+    width: 50%;
+    margin-top: 10px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    
+}
+.content-con{
+    width: 25%;
+    margin-top: 75px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray; 
+    
+}
+.content-con li{
+    list-style: none;
+    padding: 5px 0px;
+    
+}
+.content-con li a:hover{
+    color: #FF6500;
+}
+.content-con ul{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.content-con a{
+    font-size: 14px;
+}
+.content-con p{
+    font-size: 14px;
+}
+.content-con i{
+    padding: 0px 10px;
+    color: #fff;
+   
+}
+.content-con i:hover{
+    color: #FF6500;
+    cursor: pointer;
+}
+#hotline{
+    color: #fff;
+   
+}
+.footer-info{
+   margin: 20px 0px 0px 0px ;
+}
+.footer-info p{
+    color: #fff;
+    margin: 0;
+    width: 70%;
+    font-size: 13px;
+    padding-left: 200px;
+}

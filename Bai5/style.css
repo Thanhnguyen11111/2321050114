@@ -5,7 +5,16 @@ body{
     margin: 0;
     background-color: #c3b9b952
 }
+header .danhmuc{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 
+}
+header .logo{
+    margin-top: 40px;
+}
 .danhmuc{
     background-color: #2FA4E7;
 }
@@ -22,6 +31,10 @@ body{
     text-decoration: none;
     font-size: 18px;
 
+}
+.icon{
+    margin-right: 5px;
+    
 }
 .danhmuc-link:hover {
     color:gray;
@@ -58,14 +71,15 @@ main{
     display: flex;
     margin-top: 5px;
     background-color: #fff;
-    
     gap: 5px;
 }
+
 .tintuc-danhsach i{
     display: block;
     text-align: right;
     font-size: 12.8px;
 }
+
 .baiviet{
     background-color: #C5E6F8;
     width: 35%;
@@ -74,12 +88,12 @@ main{
     width: 100%;
     height: 150px;
 }
+
 .demuc{
     text-decoration: none;
     color: black;
     display: block;
     text-align: center;
-
 }
 .tieude-thongbao{
     background-color: #2FA4E7;
@@ -116,9 +130,13 @@ main{
 }
 #tb{
     color: blue;
-    
-    
 }
+.ti-angle-double-right{
+    color: #0078D4;
+    margin-right: 5px;
+}
+    
+
 .right-thongbao{
     width: 75%;
 }
@@ -201,7 +219,7 @@ main{
     margin: 3px 9px 5px 10px;
 }
 .input i{
-    padding: 10px;
+    padding: 8px;
     background-color: #eaeaea;
     color: #555;
 }
@@ -262,6 +280,7 @@ main{
     width: 100%;
     
 }
+
 .box2{
     width: 100%;
     height: 270px;
@@ -269,6 +288,7 @@ main{
 .qr1 img{
     width: 100%;
     height: 100%;
+
 }
 .qr2 img{
     width: 100%;
@@ -286,5 +306,16 @@ main{
     margin: 0;
     padding: 2px 0px;;
 }
-
+.blink{
+    color: red;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0%, 50%, 100%{
+        opacity: 1;
+    }
+    25%, 75%{
+        opacity: 0;
+    }
+}
     

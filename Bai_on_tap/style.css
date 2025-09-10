@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: #131314;
+}
+header{
+    background-color: black;
+    
+}
+.header-container{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    margin: auto;   
+    width: 75%;
+    height: auto;
+    
+}
+.danhmuc{
+    display: flex;
+    align-items: center;
+}
+.danhmuc ul{
+    display: flex;
+    list-style: none;
+    padding: auto;
+    gap: 20px;
+}
+.danhmuc-danhsach a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #9b9b9b;
+    font-size: 16px;
+    font-family: "SFProDisplay", Arial, sans-serif;
+}
+.danhmuc .logo{
+    width: 15%;
+    padding: 10px;
+    align-items: center;
+    display: flex  ;
+}
+.danhmuc-lienket a:hover{
+    color: #FF6500;
+}
+.chucnang{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.muagoi button{
+    background-color: #FF6500;
+    color: #fff;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.login button{
+    width: 100px;
+    border: none;
+    background-color: black;
+    color: #fff;
+}
+.login button:hover{
+    color: #FF6500;
+    cursor: pointer;
+}
+main{
+    height: 1000px;
+    width: 100%;
+}
+.quangcao{
+    display: flex;
+    justify-content: center;
+}
+.quangcao img{
+    width: 75%;
+}
+.qc{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: black;
+    height: 700px;
+    margin: auto;
+}
+.qc img{
+    width: 100%;
+    margin-top: 10px;
+}
