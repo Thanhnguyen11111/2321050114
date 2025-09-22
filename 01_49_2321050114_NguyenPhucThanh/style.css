@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    margin: 0;
+}
+.header-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.header-content p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0px;
+    margin: 0;
+    padding-left: 40px;
+}
+.dangnhap{
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+.dangnhap:hover{
+    background-color: #1ED760;
+}
+.dangnhap a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    width: auto;
+    height: auto;
+    display: flex;
+}
+.main-left{
+    width: 15%;
+    margin-right: 40px;
+
+}
+.main-left a{
+    font-size: 13px;
+}
+
+.main-left ul{
+    list-style: none;
+    margin-top: 70px;
+
+}
+
+.main-left a{
+    text-decoration: none;
+    color: black;
+}
+.main-left li{
+    padding: 8px;
+    position: relative;
+    z-index: 0;
+}
+.main-left li::after{
+    background-color: #1ED760;
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 500ms ease-in-out;
+}
+.main-left li:hover::after{
+    width: 80%;
+}
+.main-right{
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.main-news{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    font-size: 13px;
+}
+.div a:hover,
+.main-news a:hover{
+    color: #1ED760;
+}
+.div a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.main-news a{
+    text-decoration: none;
+    color: gray;
+}
+.div{
+    display: flex;
+    margin-right: 90px;
+    gap: 20px;
+    padding: 0;
+    font-weight: bold;
+}
+.div li{
+    color: black;
+    list-style: none;
+}
+.main-right p{
+    margin: 0;
+}
+
+.main-content{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+.main-content h3{
+    font-size: 15px;
+}
+.main-content p{
+    font-size: 13px;
+}
+.anh1,
+.anh{
+    width: 30%;
+}
+.anh1 img,
+.anh img{
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+}
+.anh1{
+    position: relative;
+}
+.date{
+    display: flex;
+    gap: 10px;
+
+}
+.date p{
+    margin: 0;
+}
+.tinhtrang{
+    font-weight: bold;
+}
+.ngay{
+    color: gray;
+}
+.bentrong-anh{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    padding: 15px 20px;
+    border: 1px solid none;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    justify-content: center;
+    gap: 20px;
+
+}
+.bentrong-anh button{
+    color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.326);
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+.bentrong-anh a{
+    text-decoration: none;
+    
+}
+.bentrong-anh .so1{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.bentrong-anh .so2{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}

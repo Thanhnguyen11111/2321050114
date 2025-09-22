@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    background: linear-gradient(to bottom, #2b2b2b, #000000);
+    font-family: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+}
+button:hover{
+    cursor: pointer;
+}
+.container{
+    margin: 25px auto;
+    width: 45%;
+    background-color: #121212;
+    height: 575px;
+    border-radius: 30px;
+}
+.noidung{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+.noidung-tren{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    
+}
+.content{
+    margin: 0;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+.logo{
+    font-size: 50px;
+    color: #fff;
+    padding-top: 20px;
+    color: #1ED760;
+}
+.list-login{
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.list-content button{
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 70%;
+    margin-bottom: 8px;
+    border: 2px solid #fff;
+    padding: 10px 0px;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+}
+.list-content button::after{
+    border-radius: 50px;
+    background-color: #1ED760;
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 500ms ease-in-out;
+}
+.list-content button:hover::after{
+    width: 100%;
+
+}
+.list-content button:hover{
+    color: #000;
+}
+.list-content i{
+    position:absolute;
+    left: 0;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.noidung-duoi{
+    width: 100%;
+    margin: auto;
+}
+.user-input{
+    margin: 30px 0px 8px 0px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    width: 68%;
+    
+}
+.input-email input{
+    width: 55%;
+    padding: 10px 0px;
+    background-color: #000;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin: 0;
+    color: #fff ;
+    
+}
+.continue a{
+    text-decoration: none;
+    color: #000;
+}
+.continue button{
+    margin: 20px 0px;
+    background-color: #1ED760;
+    width: 55%;
+    padding: 12px 0px;
+    border-radius: 30px;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+}
+.continue button::after{
+    width: 0;
+    content: '';
+    height: 100%;
+    background-color: rgb(16, 77, 38);
+    position: absolute;
+    border-radius: 30px;
+    transition: 500ms  ;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.continue button:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+.sign-up p{
+    color: gray;
+    font-size: 14px;
+    margin: 0;
+}
+.sign-up a{
+    color: #fff;
+}
+footer{
+    width: 100%;
+    background-color: #121212;
+    position: fixed;
+    bottom: 0;   
+    
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    padding: 20px 0px;
+    color: gray;
+    font-size: 11px;
+}

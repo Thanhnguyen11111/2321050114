@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javaname.js"></script>
+</head>
+<body>
+    <script>
+        // document.write('Hello World ' + '<br>' );
+        // //Khai báo biến :
+        // let hoTen = 'Nguyen Thanh';
+        // var hoTenToi = 'Thanh';
+        // document.write(hoTen + '<br>');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        // let soThuNhat = 10;
+        // let soThuHai = 5;
+        // let tong = 0;
+        // tong= soThuHai % soThuNhat;
+        // document.write(++tong);
+        // soThuNhat += soThuHai;
+        // soThuNhat -= soThuHai
+        // document.writeln(soThuNhat); 
+        // document.write(soThuHai === soThuNhat);
+        let thongTinSinhVien = {
+            hoTen : "Nguyen Phuc Thanh",
+            age: 20,
+            gender: 1,
+            class: 'CNTT',
+        }
+        let diaChi = {
+            queQuan : "Ha Noi",
+            soNha : 25,
+
+        }
+        let namNay = 2025;
+        thongTinSinhVien.diachi=diaChi
+        document.writeln("Xin chao ban: "
+            +thongTinSinhVien.hoTen
+            +" "+
+            +thongTinSinhVien.age+" tuoi"
+            +" nha o: "
+            +thongTinSinhVien.diachi.queQuan+" so nha: "+thongTinSinhVien.diachi.soNha  
+            +" sinh nam: "+(namNay - thongTinSinhVien.age)
+            
+        );
+    </script>
+</body>
+</html>                             
