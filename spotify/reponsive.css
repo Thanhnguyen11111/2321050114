@@ -1,0 +1,85 @@
+@media ((min-width: 740px) and (max-width: 1023px)){
+    body{
+        background: #121212 !important ;
+    }
+    .container{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        height: auto;
+    }
+    .list-login button {
+        /* width: 100%; */
+        padding: 15px ;
+        font-size: 16px;
+    }
+    .list-login i{
+        font-size: 18px;
+    }
+    
+    .noidung{
+        padding-top: 90px;
+    }
+    .user-input{
+        margin-top: 50px;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    .nhap-email{
+        width: 50% !important;
+        padding: 20px !important;
+    }
+    .continue button{
+        padding: 19px;
+        width: 55%;
+    }
+    .sign-up{
+        margin-top: 50px;
+        
+    }
+    .sign-up p{
+        font-size: 16px;
+    }
+    footer{
+        /* position: initial; */
+    }
+}
+
+
+
+@media (max-width: 740px){
+    body{
+        background: #121212;
+    }
+    .container{
+       width: 100%;
+        margin: 0;
+        height: 100%;
+        border-radius: 0;
+    }
+    .noidung{
+        width: 100%;
+    }
+    .list-login button {
+        width: 100%;
+        padding: 15px ;
+        font-size: 16px;
+    }
+    .list-login i{
+        font-size: 18px;
+    }
+    .user-input{
+        font-size: 13px;
+        display: block;
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .nhap-email{
+        width: 75% !important;
+    }
+    .continue button{
+        width: 80%;
+        padding: 15px;
+    }
+}

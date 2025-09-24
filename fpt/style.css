@@ -15,7 +15,30 @@ header {
     width: 75%;
     margin: auto;
 }
+.side-bar{
+    position: fixed;
+    top: 38px;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: #131314;
+     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.ti-menu{
+    color: #fff;
+    display: block;
+    text-align: right;
+    font-size: 20px;
+}
 
+.side-bar li{
+    margin-left: 20px;
+    margin-top: 20px;
+}
 .danhmuc {
     display: flex;
     align-items: center;

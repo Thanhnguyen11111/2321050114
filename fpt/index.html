@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
 </head>
 
@@ -14,7 +15,16 @@
         <div class="header-container">
             <!-- Danh mục trang web -->
             <nav class="danhmuc">
-                    <img class="logo" src="logowebsite4x_1748221195181.png" alt="">
+                <ul class="side-bar">
+                    <li class="danhmuc-lienket"><a href="#">Trang chủ</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Truyền hình</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Phim bộ</a></li>
+                    <li class="danhmuc-lienket"><a href="#">V.League</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Thiếu nhi</a></li>
+                    <li class="danhmuc-lienket"><a href="#">Xem thêm <i class="ti-angle-down"></i></a></li>
+                </ul>
+                <i onclick = closeshowSidebar() class="ti-menu"></i>
+                <img class="logo" src="logowebsite4x_1748221195181.png" alt="">
                 <ul class="danhmuc-danhsach">
                     <li class="danhmuc-lienket"><a href="#">Trang chủ</a></li>
                     <li class="danhmuc-lienket"><a href="#">Truyền hình</a></li>
@@ -23,6 +33,7 @@
                     <li class="danhmuc-lienket"><a href="#">Thiếu nhi</a></li>
                     <li class="danhmuc-lienket"><a href="#">Xem thêm <i class="ti-angle-down"></i></a></li>
                 </ul>
+              
             </nav>
             <!-- Chức năng -->
             <div class="chucnang">
@@ -469,6 +480,18 @@
            
         
     </footer>
+    <script>
+        function closeshowSidebar(){
+            const sidebar = document.querySelector('.side-bar');
+            if(sidebar.style.display === 'none'){
+                sidebar.style.display = 'flex';
+            }
+            else{
+                sidebar.style.display = 'none';
+            }
+        }
+       
+    </script>
 </body>
 
 </html>

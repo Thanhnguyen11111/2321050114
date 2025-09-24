@@ -93,7 +93,7 @@ button:hover{
 }
 .input-email input{
     width: 55%;
-    padding: 10px 0px;
+    padding: 10px 8px;
     background-color: #000;
     border: 1px solid gray;
     border-radius: 4px;
