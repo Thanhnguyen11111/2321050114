@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Hello ae
-=======
-Thanhdz
->>>>>>> thanh-01
+Thanh
