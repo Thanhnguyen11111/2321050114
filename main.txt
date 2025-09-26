@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Hello ae
+=======
+Thanhdz
+>>>>>>> thanh-01
