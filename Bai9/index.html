@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <script>
+        // Mảng
+        // let arr = [1, 2, 3, 4, 5, 'a', 'v', 'g', 5];
+        // document.writeln(arr.length + '<br>'); // Đọ dài của mảng
+        // document.writeln(arr[1]+'<br>'); // Đọc phần tử trong mảng  
+        // document.writeln(arr.indexOf('a') + '<br>');// Trả về vị trí xuất hiện đầu tiên của phần tử trong mảng
+        // document.writeln(arr.lastIndexOf(5));// trả về vị trí xuất hiện cuối của phần tử trong mảng
+        // document.writeln(Array.isArray(arr));// kiểm tra xxem có phải là mảng không
+        // let a, b, c, d;
+        // a = [1, 2, 3];
+        // b = 'Javascript';
+        // c = [42 , 'VBScript'];
+        // d = a.concat(b, c) // Nối các phần tử tạo thành mảng    
+        // document.writeln(d.pop() + '<br>');//Bỏ đi 1 phần tử trong mảng và in ra
+        // document.writeln(d.push('Thanh'+ '<br>'))//Thêm 1 phần tử và trả ra số phần tử trong mảng 
+        // document.writeln(d.reverse() + '<br>')//Đảo lại vị trí trong mảng
+        // shift(): xóa phần tử đầu tiên
+        // unshoft(): thêm phần tử vào dầu mảng\
+       
+        // let toDay = new  Date();
+        // let now = toDay.getHours();
+        // if(now < 10){
+        //     document.writeln('Chào buổi sáng');
+        // }else if (now >= 10 && now <= 12){
+        //     document.writeln('Chào buổi trưa ');
+        // }else if(now > 12 && now <= 17){
+        //     document.writeln('Chào buổi chiều');
+        // }else if(now > 17 && now <=22){
+        //     document.writeln('Chào buổi tối');
+        // }else {
+        //     document.writeln('Chào buổi){ đêm')
+        // }
+        let so = '12312838712983091290309123103901';
+        let soCuoiCung = parseInt(so[so.length - 1]);
+        if(soCuoiCung %2 == 0){
+            document.writeln('Số ' + so + ' là số chắn')
+        }else{
+            document.writeln('Số ' + so + 'là số lẻ')
+        }
+    </script>
+</body>
+</html> 

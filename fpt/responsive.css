@@ -34,4 +34,7 @@
     .danhmuc-danhsach{
         display: none;
     }
+    main{
+        width:  !important  ;
+    }
 }
