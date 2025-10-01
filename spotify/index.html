@@ -43,11 +43,18 @@
                             <input class="nhap-email" type="text" placeholder="Email or username">
                         </div>
                         <div class="continue">
-                            <button><a href="">Continue</a></button>
+                            <button onclick="showText()" class="output"><a href="">Continue</a></button>
                         </div>
                         <div class="sign-up">
                             <p>Don't have an account?<a href="">Sign up for Spotify</a></p>
                         </div>
+                        <script>
+                            function showText(){
+                                let text = document.querySelector('.nhap-email').value;
+                                alert(text)
+                            }
+
+                        </script>
                     </div>
 
                     

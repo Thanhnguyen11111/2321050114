@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10</title>
+</head>
+<body>
+    <script>
+        // alert("xin chào")
+        // let result = confirm("press a button");
+        // if(result == true){
+        //     document.writeln('Press OK <br>')
+        // }else{
+        //     document.writeln("press cancel  <br>")
+        // }
+        // let result2 = prompt('Some text' , 'defaul value  ');
+        // document.writeln(result2);
+        // var toDay = new Date();
+        // let theDay = toDay.getDay();
+        // switch(theDay){
+        //     case 5: 
+        //         document.writeln("Finally friday");
+        //         break;
+        //     case 6:
+        //         document.writeln("Super saturday");
+        //         break;
+        //     case 7:
+        //         document.writeln("Sleepy Sunday");
+        //         break;
+        //     default:
+        //         document.writeln("I'm looking forward to this weekend <br>");
+        // }
+        // let arrNum = [1,2,3,4,5,6]
+        // for (let i = 0; i < 1000; i++) {
+        //     document.writeln('Anh xin lỗi <br>')
+            
+        // }
+        // for (let j= 0; j < arrNum.length; j++) {
+        //     document.writeln(arrNum[j] + '<br>')
+            
+        // }
+        // let danhSach = ["Lương Ngọc	Bích ", "Dương Gia Bình ", "Nguyễn Như Thành Danh ", "Hoàng Xuân Duẩn ", "Hà Văn Dũng"];
+        // for (let i = 0; i < danhSach.length; i++) {
+        //     document.writeln("Chào Bạn: " + danhSach[i]+ '<br>'); 
+        // }
+        // let i = 0;
+        // while(i<=10){
+        //     document.writeln("The number is " + i +"<br>");
+        //     i++;    
+        // }
+        // Hàm có tham số
+        // function sayHello(name, age){
+        //     document.writeln("helo " + name + " " + age +" tuổi")
+        // }
+        // let nameP = prompt("Tên" , "Điền tên");
+        // let ageP = prompt("Tuổi", "Điền tuổi");
+        // sayHello(nameP, ageP);
+        //Hàm không tham số
+        // let name = "Thành" // biến toàn cục
+        // function sayHello(){
+        //     let name = "Thành"//  Biến cục bộ
+        //     document.writeln(name);
+        // }
+        // sayHello()
+        let number =parseFloat(prompt('Nhập số', 'Số '));
+        function checkNumber(){
+            if(number %2 ==0){
+                document.writeln("số chẵn");
+            }else{
+                document.writeln("số lẻ");
+            }
+        }   
+        if(!isNaN(number)){
+            checkNumber(number);
+        }
+        else{
+            document.writeln("vui lòng nhập vào số")
+        }
+        </script>
+</body>
+</html>

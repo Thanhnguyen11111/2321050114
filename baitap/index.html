@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue{
+            background-color: blue;
+        }
+        .pink{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <input type="text " class="input">
+    <button onclick="dauRa()" class="output">Hiển thị</button>
+    <p class="hehe"></p>
+    <button class="id" onclick="doiMauXanh()">hehe</button>
+    <button id="hehe" onclick="doiMau()">Dit cu may</button>
+    <button id="addEvent"></button>
+    <script>
+        let random = Math.floor(Math.random() * 100);
+        if(random < 5){
+            console.log("Jackpot")
+        }
+        let value = document.querySelector('#addEvent');
+        value.addEventListener("click",doiMauXanh);
+        function doiMauXanh(){
+            let key = document.querySelector('.id');
+            // key.classList.add('blue');
+             // không có thì thêm có rồi thì xóa
+            // key.classList.toggle('blue');
+            setInterval(() => {
+                key.classList.toggle('blue');
+            }, 1000)
+        }
+        function doiMau(){
+            let doimau = document.querySelector('body');
+            if(doimau.style.backgroundColor == 'white'){
+                doimau.style.backgroundColor = 'red';
+            }else{
+                doimau.style.backgroundColor = 'white';
+            }
+        }
+        function dauRa(){
+            let num = parseInt(document.querySelector('.input').value);
+            let ketQua = kiemTraSnt(num);
+            document.querySelector('.hehe').innerHTML=ketQua;
+        }
+        function kiemTraSnt(n){
+            if( n < 2){
+                return n + 'không phải là số nguyên tố';
+            }
+            let kiemTra = true;
+             for(var i = 2; i <= Math.sqrt(n);i++){
+                if(n%i==0){
+                    kiemTra = false;
+                    break;
+                }
+            }
+            if(kiemTra){
+                return n + " là số nguyên tố";
+            }else{
+                return n+ "không là số nguyên tố";
+            }
+        }
+        // kiemTraSnt(5);
+        // kiemTraSnt(10);
+        // let arr = [];
+        // function soFibonacciThuN(n){
+        //     if(n ==0) return 0;
+        //     if(n==1) return 1;
+        //     return soFibonacciThuN(n-1) + soFibonacciThuN(n-2);
+        // }
+        // function sumFibonacci(n){
+        //     var sum = 0;
+        //     for(var i = 0;i< n ; i++){
+        //         arr.push(soFibonacciThuN(i));
+        //         sum+=arr[i];
+        //     }
+        //     document.writeln(sum);
+        // }
+        // sumFibonacci(10);
+       
+
+    </script>
+   
+</body>
+</html>
