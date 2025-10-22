@@ -1,39 +1,39 @@
-<html>
-    <head>
-        <title>
-            bai2
-        </title>
-    </head>
-    <body>
-        <h1>Bai2</h1>
-        <a href="https://daotaodaihoc.humg.edu.vn/#/home">Humg</a>
-        <table border="1">
-            <caption>Bảng 1</caption>
-            <tr>
-                <th>STt</th>
-                <th colspan="2">Họ và tên</th>
-                
-                <th>MSSV</th>
-                <th>Lớp</th>
-
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Nguyễn Văn</td>
-                <td>A</td>
-                <td>12334</td>
-                <td rowspan="2">9A</td>
-
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Nguyễn Văn </td>
-                <td>B</td>
-                <td>123234</td>
-                
-
-            </tr>
-        </table>
-        
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="list">
+        <p>List tìm kiếm theo kí tự</p>
+        <input type="text" class="nhap" placeholder="Tìm kiếm ....">
+        <ul class="danhsach">
+            <li class="list-menu"><a href="">HTML</a></li>
+            <li class="list-menu"><a href="">CSS</a></li>
+            <li class="list-menu"><a href="">Javascript</a></li>
+            <li class="list-menu"><a href="">PHP</a></li>
+            <li class="list-menu"><a href="">C++</a></li>
+            <li class="list-menu"><a href="">Java</a></li>
+            <li class="list-menu"><a href="">Python</a></li>
+            <li class="list-menu"><a href="">MySQL</a></li>
+        </ul>
+    </div>
+    <script>
+        let text = document.querySelector('.nhap');
+        let lists = document.querySelectorAll('.list-menu');
+        text.onkeyup= function(){
+            let term = text.value.toLowerCase();
+            lists.forEach(function(list){
+                if(list.textContent.toLowerCase().includes(term)){
+                    list.classList.remove('hidden');
+                }else{
+                    list.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
 </html>

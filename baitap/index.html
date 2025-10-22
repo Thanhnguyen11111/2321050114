@@ -23,10 +23,17 @@
     <script>
         let random = Math.floor(Math.random() * 100);
         if(random < 5){
-            console.log("Jackpot")
+            console.log("Jackpot")  
+        }
+
+        function viec1(){
+            console.log("hêloo");
         }
         let value = document.querySelector('#addEvent');
-        value.addEventListener("click",doiMauXanh);
+        value.addEventListener("click",viec1);
+        setTimeout(function(){
+            value.removeEventListener('click',viec1);
+        }, 3000);
         function doiMauXanh(){
             let key = document.querySelector('.id');
             // key.classList.add('blue');
@@ -34,7 +41,7 @@
             // key.classList.toggle('blue');
             setInterval(() => {
                 key.classList.toggle('blue');
-            }, 1000)
+            }, 1000)    
         }
         function doiMau(){
             let doimau = document.querySelector('body');

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ccc;
+        }
+        .clock{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+            text-align: center;
+            background-color: blue;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        #container{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="inPut">
+            <input type="number" class="nhapThoiGian">
+            <button onclick="setTime()">Set time</button>
+        </div>
+        <p id="container">00:00:00</p>
+        <button onclick="start()">start</button>
+        <button onclick="pause()">pause</button>
+        <button onclick="reset()"> Reset</button>
+    </div>
+    <script>
+        let running = false;
+        let time; 
+        let times;  
+        function formatClock(sec){
+            let h = Math.floor(sec/3600);
+            let m = Math.floor((sec%3600)/60);
+            let s = Math.floor(sec%60);
+            document.querySelector('#container').innerHTML =
+                String(h).padStart(2, "0") + ":" +
+                String(m).padStart(2, "0") + ":" +
+                String(s).padStart(2, "0");
+        }
+        function setTime(){
+            times = parseInt(document.querySelector('.nhapThoiGian').value);
+            formatClock(times);
+        }
+        function start(){
+            if(!running ){
+                running = true;
+                time = setInterval(function(){
+                    if(times > 0){
+                        times--;
+                        formatClock(times);
+                    }
+                    else{
+                        clearInterval(time);
+                        alert('Đã đếm xong');
+                    }
+                },1000);
+            }
+        }
+        function pause(){
+            if(running){
+                clearInterval(time);
+                running= false;
+            }
+        }
+        function reset(){
+            if(running){
+                pause();
+            }
+            formatClock(0);
+        }
+    </script>
+</body>
+</html>
