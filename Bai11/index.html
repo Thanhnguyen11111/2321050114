@@ -22,7 +22,7 @@
             let diemB = parseFloat(document.getElementById('diemB').value);
             let diemC = parseFloat(document.getElementById('diemC').value);
             let sum = tinhDiem(diemA, diemB, diemC);
-            let ketqua = document.getElementById('ketQua').value = sum;
+            document.getElementById('ketQua').value = sum;
         }
         function tinhDiem(A, B, C){
             if(check(A) && check(B) && check(C)){
