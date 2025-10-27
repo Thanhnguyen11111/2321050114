@@ -14,15 +14,26 @@
     </div>
     <div>
         <button onclick="xemKetQua()">Tính điểm</button> <br>
-        kết quả: <input id="ketQua" type="number">
+        kết quả: <input id="ketQua" type="number"> <br>
+        Học lực: <input id="showKetqua" type="text">
     </div>
     <script>
         function xemKetQua(){   
             let diemA = parseFloat(document.getElementById('diemA').value);
             let diemB = parseFloat(document.getElementById('diemB').value);
             let diemC = parseFloat(document.getElementById('diemC').value);
-            let sum = tinhDiem(diemA, diemB, diemC);
-            document.getElementById('ketQua').value = sum;
+            let sum =tinhDiem(diemA, diemB, diemC);
+            document.getElementById('ketQua').value = sum.toFixed(2);
+            document.getElementById('showKetqua').value = xepLoai(sum);
+        }
+        function xepLoai(diemTb){
+            if (diemTb >= 8) {
+                return "Giỏi";
+            } else if (diemTb >= 6.5 && diemTb < 8) {
+                return "Khá";
+            } else if (diemTb >= 5 && diemTb < 6.5) {
+                return "Trung Bình";
+            } else return "Yếu";
         }
         function tinhDiem(A, B, C){
             if(check(A) && check(B) && check(C)){
@@ -39,7 +50,6 @@
                 return false;
             }
         }
-        console.log("Sum: "+ tinhDiem('10', 9, 10));
     </script>
 </body>
 </html>

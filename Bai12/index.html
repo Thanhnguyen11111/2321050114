@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="doimau">
+    <div class="vidu">
+        <p>Ví dụ về chế độ</p>
+        <div class="anh">
+            <img class="anh1" src="image.png" alt="">
+            <img class="anh2" src="img1.png" alt="">
+        </div>
+        <span>Chế độ sáng</span>
+        <div>
+            <button class="nhan">Đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        let dark = document.querySelector('.doimau');
+        let but = document.querySelector('.nhan');
+        let chedo = document.querySelector('span');
+        let anh2 = document.querySelector('.anh2')
+        let anh1 = document.querySelector('.anh1')
+
+        but.addEventListener('click' ,() => {
+            dark.classList.toggle('dark');
+            if(dark.classList.contains('dark')){
+                chedo.innerHTML = 'Chế độ tối';
+            }else{
+                chedo.innerHTML = 'Chế độ sáng';
+            }
+            if(chedo.innerHTML === 'Chế độ tối'){
+                anh1.classList.add('hidden')
+                anh2.classList.add('active');
+            }
+            else if(chedo.innerHTML === 'Chế độ sáng'){
+                anh1.classList.remove('hidden');
+                anh2.classList.remove('active');
+            }
+        })
+    </script>
+</body>
+</html>

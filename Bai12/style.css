@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.anh2{
+    display: none;
+}
+.anh img{
+    width: 200px;
+    height: 200px;
+}
+.vidu{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+    background-color: black;
+    color: #fff;
+}
+.active{
+    display: block;
+}
+.hidden{
+    display: none;
+}
