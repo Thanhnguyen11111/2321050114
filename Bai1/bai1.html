@@ -1,90 +1,50 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slide Kéo Ảnh - Hoạt động chuẩn</title>
-  <style>
-    body {
-      background: linear-gradient(120deg, #74ABE2, #5563DE);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    .slider-container {
-      width: 600px;
-      overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      background: white;
-      position: relative;
-    }
-
-    .slider {
-      display: flex;
-      cursor: grab;
-      transition: transform 0.3s ease;
-    }
-
-    .slider:active {
-      cursor: grabbing;
-    }
-
-    .slider img {
-      width: 600px;
-      height: 350px;
-      object-fit: cover;
-      user-select: none;
-      pointer-events: none;
-    }
-  </style>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+      <div class="container-content">
+        <h2>To-do lists</h2>
+        <div class="inputBox">
+          <input class="todolist" type="text" placeholder="Write here">
+          <button class="addList">Add</button>
+        </div>
+        <ul class="list-todo">
 
-  <div class="slider-container">
-    <div class="slider">
-      <img src="https://picsum.photos/id/1015/600/350" alt="Ảnh 1">
-      <img src="https://picsum.photos/id/1016/600/350" alt="Ảnh 2">
-      <img src="https://picsum.photos/id/1018/600/350" alt="Ảnh 3">
-      <img src="https://picsum.photos/id/1021/600/350" alt="Ảnh 4">
+        </ul>
+      </div>
+
     </div>
-  </div>
-
-  <script>
-    const slider = document.querySelector('.slider');
-    let isDown = false;
-    let startX;
-    let currentTranslate = 0;
-    let prevTranslate = 0;
-
-    slider.addEventListener('mousedown', (e) => {
-      isDown = true;
-      startX = e.pageX;
-      slider.style.transition = 'none';
-    });
-
-    slider.addEventListener('mouseleave', () => {
-      isDown = false;
-    });
-
-    slider.addEventListener('mouseup', () => {
-      isDown = false;
-      prevTranslate = currentTranslate;
-      slider.style.transition = 'transform 0.3s ease';
-    });
-
-    slider.addEventListener('mousemove', (e) => {
-      if (!isDown) return;
-      const x = e.pageX;
-      const move = x - startX;
-      currentTranslate = prevTranslate + move;
-      slider.style.transform = `translateX(${currentTranslate}px)`;
-    });
-  </script>
-
+    <script>
+      let inputTodo = document.querySelector('.todolist');
+      let addTodo = document.querySelector('.addList');
+      let listTodo = document.querySelector('.list-todo');
+      addTodo.addEventListener('click', () => {
+        let inputList = inputTodo.value.trim();
+        if(inputList === ''){
+          alert("Nhập thông tin đi cmmm");
+          return;
+        }
+        let li = document.createElement('li');
+        let but = document.createElement('button')
+        li.textContent = inputList;
+        but.textContent = 'X';
+        listTodo.append(li);
+        li.append(but);
+        inputTodo.value = ' ';
+        but.addEventListener('click', () => {
+          li.remove();
+        })
+        li.addEventListener('click', () =>{
+          li.classList.toggle('completed')
+        })
+    
+      })
+    </script>
 </body>
 </html>

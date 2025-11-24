@@ -5,13 +5,20 @@
     .hidden{
         display: none;
     }
+    .side-bar{
+        opacity: 0;
+    }
 }
 @media((min-width: 768px) and (max-width: 1023px)){
     .header-container{
-        width: 90%;
+        width: 100%;
     }
     .logo{
         width: 20%;
+        /* margin-left: 50px; */
+    }
+    .ti-menu{
+        margin-left: 20px;
     }
     .danhmuc-danhsach{
         display: none;
@@ -101,7 +108,7 @@
         display: none;
     }
     .side-bar{
-        height: 100%;
-        margin-top: 54px;
+        height: 100vh;
+        /* margin-top: 54px; */
     }
 }
